@@ -1,0 +1,41 @@
+.opinion {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #dedede;
+  margin-bottom: clamp(60px, 6.25vw, 120px); 
+}
+
+.opinion h2 {
+  font-size: clamp(2.5rem, 3.125vw, 3.75rem); 
+  font-weight: 600;
+  margin-top: clamp(50px, 5.2vw, 100px); 
+}
+
+.pte {
+  background-color: #a020f0;
+  padding: clamp(1.5rem, 1.8vw, 2.1875rem);
+  font-size: clamp(1.25rem, 1.3vw, 1.5625rem);
+  border-radius: clamp(0.75rem, 1.04vw, 1.25rem);
+  margin-bottom: clamp(2rem, 2.6vw, 3.125rem);
+  width: clamp(30%, 67vw, 90%); 
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+.img-op {
+  margin: clamp(1.5rem, 2.6vw, 3.125rem); 
+}
+
+
+.opinion h3 {
+  font-weight: 300;
+  font-size: clamp(1rem, 1.5vw, 2rem); 
+}
+
+.opinion h4 {
+  margin-top: 0.625rem; 
+  font-size: clamp(1rem, 1.25vw, 1.25rem); 
+}

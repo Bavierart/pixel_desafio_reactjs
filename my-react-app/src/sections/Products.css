@@ -1,0 +1,75 @@
+.prod {
+  background-color: #121212;
+  color: #dedede;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  overflow-x: hidden; 
+}
+
+.prod h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #dedede;
+}
+
+.prod-image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.prod-image-container img {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  top: 100px;
+  margin-bottom: 100px;
+  margin-top: -100px;
+}
+
+.prod-image-container .faixaroxa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px; 
+  background-color: #6a0dad;
+  z-index: 1;
+  border-radius: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.prod p {
+  max-width: 1300px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: #dedede;
+}
+
+.butprod {
+  background-color: #6a0dad;
+  color: #dedede;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.butprod:hover {
+  background-color: #40046a;
+  box-shadow: 2px 2px 4px #000 inset;
+}

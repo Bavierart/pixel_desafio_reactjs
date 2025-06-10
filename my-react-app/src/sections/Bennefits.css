@@ -1,0 +1,130 @@
+#beneficios {
+    background-color: #6a0dad;
+    margin-top: 160px; 
+    padding-top: 50px;
+    padding-bottom: 100px; 
+    margin-bottom: 100px; 
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.secp {
+    background-color: #6a0dad;
+}
+
+.secb {
+    background-color: #121212;
+}
+
+#beneficios h1 {
+    color: #dedede;
+    font-size: 3rem;
+    top: 9px;
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    background-color: #6a0dad;
+    padding: 0 20px;
+}
+
+.border-box {
+    position: relative;
+    z-index: 1;
+}
+
+.border-box::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    bottom: 20px;
+    left: 100px;
+    right: 100px;
+    border: 5px solid #dedede;
+    border-radius: 10px;
+    z-index: 1;
+    pointer-events: none;
+    background: transparent;
+
+    @media (max-width: 1600px) {
+        left: 50px;
+        right: 50px;
+    }
+    @media (max-width: 1200px) {
+        left: 20px;
+        right: 20px;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.section {
+    align-items: center;
+    height: 663px; 
+    font-size: 1.5rem; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.section img {
+    width: 600px;
+    height: 600px; 
+    object-fit: cover; 
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.cont p {
+    color: #dedede;
+    margin: 20px;
+    width: 500px;
+}
+
+.final {
+    margin: 100px 0; 
+    font-size: 1.5rem; 
+}
+.final p {
+    width: 800px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .section img {
+        width: 100%;
+        height: auto;
+        max-width: 600px; 
+    }
+    
+    .cont p,
+    .final p {
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    .final p {
+        max-width: 800px;
+    }
+}

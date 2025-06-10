@@ -1,0 +1,111 @@
+.contactsec {
+    background-color: #dedede;
+    margin-bottom: -20px;
+    padding: clamp(2rem, 5vw, 3.125rem);
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: auto; /* better for responsiveness */
+}
+
+.contactsec::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    bottom: 70px;
+    left: min(400px, 25vw);
+    right: min(400px, 25vw);
+    border: 5px solid #6a0dad;
+    border-radius: 10px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Remove side borders on medium-sized screens */
+@media (max-width: 1900px) {
+    .contactsec::before {
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+}
+
+/* Completely remove the border on small screens */
+@media (max-width: 770px) {
+    .contactsec::before {
+        display: none; /* better than just border: none */
+    }
+
+    .but-backc {
+        bottom: 0; /* prevent it from floating too far down */
+        margin-top: 1rem;
+    }
+
+    .content-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-contact img {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+    }
+
+    .content-contact p {
+        width: 90%;
+    }
+}
+
+.contactsec h1 {
+    color: #121212;
+    font-size: clamp(2rem, 3vw, 3rem);
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    background-color: #dedede;
+    padding: 0 clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 1rem;
+}
+
+.content-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    position: relative;
+    z-index: 0;
+    flex-wrap: wrap;
+    max-width: min(90%, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: clamp(1rem, 2vw, 1.5rem) 0;
+}
+
+.content-contact img {
+    width: 400px;
+    border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
+    height: 700px;
+    object-fit: cover;
+}
+
+.content-contact p {
+    max-width: min(90vw, 600px);
+    width: min(90vw, 50%);
+    margin: 0;
+    color: #121212;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.but-backc {
+    background-color: #dedede;
+    position: relative;
+    z-index: 2;
+    width: min(80vw, 200px);
+    padding-top: clamp(0.5rem, 1vw, 0.625rem);
+    margin: 0 auto;
+    border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
+    
+}

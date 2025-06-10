@@ -1,0 +1,15 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-no-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+    min-height: 100%;
+    margin-bottom: -100px;
+    background: #121212;
+}
+
